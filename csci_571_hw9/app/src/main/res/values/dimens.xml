@@ -1,0 +1,25 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="stock_title_size">30dp</dimen>
+    <dimen name="quote_button_size">26dp</dimen>
+    <dimen name="quote_button_margin">36dp</dimen>
+    <dimen name="quote_buttons_gap">72dp</dimen>
+    <dimen name="favorites_margin">12dp</dimen>
+    <dimen name="stock_news_size">18dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="facebook_button_scale">.25</dimen>
+    <dimen name="stock_arrow_scale">.95</dimen>
+    <dimen name="stock_arrow_margin_top">-90dp</dimen>
+    <dimen name="stock_arrow_margin_left">-80dp</dimen>
+    <dimen name="facebook_button_margin_top">-25dp</dimen>
+    <dimen name="favorite_button_margin_top">15dp</dimen>
+    <dimen name="stock_details_text_size">30dp</dimen>
+
+    <dimen name="progressbar_size">100dp</dimen>
+    <dimen name="progressbar_margin">120dp</dimen>
+    <dimen name="no_padding">0dp</dimen>
+</resources>

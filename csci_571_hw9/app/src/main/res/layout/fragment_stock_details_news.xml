@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:maxWidth="@dimen/progressbar_size"
+        android:minWidth="@dimen/progressbar_size"
+        android:minHeight="@dimen/progressbar_size"
+        android:maxHeight="@dimen/progressbar_size"
+        android:layout_marginLeft="@dimen/progressbar_margin"
+        android:layout_gravity="center"
+        android:id="@+id/stock_news_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        />
+    <TextView
+        android:id="@+id/news_error_textview"
+        android:layout_marginTop="@dimen/quote_button_size"
+        android:layout_marginLeft="@dimen/favorites_margin"
+        android:textSize="@dimen/quote_button_size"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:text="@string/error_message"/>
+    <ListView
+        android:id="@+id/news_listview"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+    </ListView>
+</LinearLayout>

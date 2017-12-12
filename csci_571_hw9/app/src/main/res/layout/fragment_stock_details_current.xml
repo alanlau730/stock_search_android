@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/stock_details_textview"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:textSize="@dimen/stock_details_text_size"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/stockdetails_name"/>
+            <ImageButton
+                android:layout_marginTop="@dimen/facebook_button_margin_top"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/facebook_button"
+                android:background="@android:color/transparent"
+                android:scaleX="@dimen/facebook_button_scale"
+                android:scaleY="@dimen/facebook_button_scale"
+                android:src="@drawable/facebook"/>
+            <ImageButton
+                android:layout_marginTop="@dimen/favorite_button_margin_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/favoritetoggle_button"
+                android:background="@android:color/transparent"
+                android:src="@drawable/empty"/>
+        </LinearLayout>
+        <ProgressBar
+            android:maxWidth="@dimen/progressbar_size"
+            android:minWidth="@dimen/progressbar_size"
+            android:minHeight="@dimen/progressbar_size"
+            android:maxHeight="@dimen/progressbar_size"
+            android:layout_gravity="center"
+            android:id="@+id/stock_details_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            />
+        <TextView
+            android:id="@+id/current_error_textview"
+            android:layout_marginTop="@dimen/quote_button_size"
+            android:layout_marginLeft="@dimen/favorites_margin"
+            android:textSize="@dimen/quote_button_size"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:text="@string/error_message"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ListView
+                android:id="@+id/stock_symbol_listview"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_width="wrap_content"
+                android:minHeight="50dp"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/indicator_textview"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:layout_marginLeft="@dimen/fab_margin"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/indictaor_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/quote_button_size" />
+                <Spinner
+                    android:id="@+id/indicator_spinner"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:layout_marginLeft="@dimen/quote_button_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/indicator"
+                     />
+                <Button
+                    android:id="@+id/change_button"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/gray"
+                    android:text="Change" />
+            </LinearLayout>
+            <!--<ProgressBar
+                android:maxWidth="@dimen/progressbar_size"
+                android:minWidth="@dimen/progressbar_size"
+                android:minHeight="@dimen/progressbar_size"
+                android:maxHeight="@dimen/progressbar_size"
+                android:layout_gravity="center"
+                android:id="@+id/stock_chart_progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                />-->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <WebView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chart_webview"/>
+            </ScrollView>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
