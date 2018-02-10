@@ -1,4 +1,4 @@
-Android version works by making http requests to the web version hosted on https://csci571hw8copy.appspot.com
+Android version works by making http requests to the web version hosted on http://hazel-torus-194807.appspot.com/
 
 -Facebook sharing feature doesn't work yet.
 
