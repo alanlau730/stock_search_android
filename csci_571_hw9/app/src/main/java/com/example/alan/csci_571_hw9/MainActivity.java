@@ -65,10 +65,10 @@ import static java.nio.file.Paths.get;
 
 public class MainActivity extends AppCompatActivity {
     //list of components we'll need
-    public static String autocompleteURL = "http://csci571hw8copy.appspot.com/autocomplete";
-    public static String quoteURL = "http://csci571hw8copy.appspot.com/quote";
-    public static String newsURL = "http://csci571hw8copy.appspot.com/news";
-    public static String quoteRefreshURL = "http://csci571hw8copy.appspot.com/quoteRefresh";
+    public static String autocompleteURL = "http://hazel-torus-194807.appspot.com/autocomplete";
+    public static String quoteURL = "http://hazel-torus-194807.appspot.com/quote";
+    public static String newsURL = "http://hazel-torus-194807.appspot.com/news";
+    public static String quoteRefreshURL = "https://hazel-torus-194807.appspot.com/quoteRefresh";
     public static String chartURL = "file:///android_asset/chart.html";
     public static String historicalchartURL = "file:///android_asset/historicalchart.html";
     public static String JSONOBJECT = "JSONOBJECT";
